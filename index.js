@@ -1,7 +1,8 @@
 // server/index.js - COMPLETE WORKING VERSION WITH AUTHENTICATION
-require('dotenv').config();
+import dotenv from 'dotenv';
+import express from 'express';
+dotenv.config();
 
-import express from "express";
 import sqlite3 from "sqlite3";
 import { open } from "sqlite";
 import cors from "cors";
